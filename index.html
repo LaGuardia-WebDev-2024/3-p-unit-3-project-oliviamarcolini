@@ -14,47 +14,556 @@ Select ONE Additional Feature to Add
 
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Project: Recipe book</title>
+    <meta charset="utf-8" />
+    <style>
+      h2 {color: #d07676; font-size: 25px}
 
-<head>
-  <title>Project: Recipe book</title>
-  <meta charset="utf-8">
-  <style>
-  </style>
-</head>
+      h1 {font-size: 40px;}
 
-<body>
+      h3 {color: #FFB0B0}
 
-  <h1>____'s Recipe Book</h1>
+      body, p {font-family: Lucida Console,
+        monospace;
+        background-color: #fffceb}
 
-  <h2>Contents:</h2>
+       hr {height: 10px;
+          background-color: #FFB0B0;
+          border-color: #FFB0B0;
+          text-align: left;
+          margin-left:0}
 
-  <ol>
-    <li><a href="?">Recipe #1</a></li>
-  </ol>
+      p {border-radius: 15px;
+          padding: 1.5%;
+          height: 0.2%;
+        width: fit-content;
+      border: 2px solid #FFB0B0;
+      color: #9c5959}
 
-  <h2 id="?">Recipe #1</h2>
+      p:hover {background-color: #FFF7D1}
 
-  <ul>
-    <li>Time: _</li>
-    <li>Serves: _</li>
-  </ul>
+      /* mouse over link */
+      a:hover {
+        color: #eaa85d;
+      }
 
-  <table>
-    <thead>
+      a {color: #d07676}
+
+      #subtitle {
+        font-size: 20px;
+      }
+
+      table
+      {width: 600px;}
+
+      table,
+      th,
+      td {
+        border: 1px solid;
+        color: #d07676;
+        font-family: copperplate; fantasy;
+        text-align: center;
+        font-size: 18px
+      }
+
+      th {background-color: #FFD09B;
+      color: #e38a8a;
+      font-size: 18px}
+
+      td:hover {background-color: #FFF7D1}
+
+      ol {color: #d07676}
+
+      li {list-style-type: "☆  "}
+
+      img {
+        border-radius: 15px 50px;
+        border: 2px solid;
+      }
+
+      #blue {color:#8499ba}
+      #yellow {color:#e2e3a3}
+      #green {color:#a9c993}
+
+      .brazil {-webkit-text-stroke-width: 1.5px;
+      -webkit-text-stroke-color: black}
+
+      .steps {color: #fcb058}
+    </style>
+  </head>
+
+  <body>
+    <h1>
+      My Favorite <strong id="green" class="brazil">Bra</strong
+      ><strong id="yellow" class="brazil">zil</strong
+      ><strong id="blue" class="brazil">ian</strong> Foods <br />
+      <em id="subtitle"
+        >And How to Make Them (click on images for more details!)</em
+      >
+    </h1>
+
+    <hr />
+
+    <h2 id="contents">CONTENTS:</h2>
+
+    <ol>
+      <li><a href="#arroz">Arroz à Piamontese</a></li>
+      <li><a href="#brigadeiro">Brigadeiro</a></li>
+      <li><a href="#pastel">Pastel</a></li>
+      <li><a href="#bolinho">Bolinho de Bacalhau</a></li>
+      <li><a href="#coxinha">Coxinha</a></li>
+    </ol>
+
+    <hr />
+
+    <h2 id="arroz">ARROZ À PIAMONTESE</h2>
+    <table style="float: left; margin-right: 20px; margin-bottom: 5px">
+      <thead>
+        <tr>
+          <th>Ingredients</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>rice</td>
+          <td>2 cups</td>
+        </tr>
+        <tr>
+          <td>oil</td>
+          <td>1 tablespoon</td>
+        </tr>
+        <tr>
+          <td>minced garlic</td>
+          <td>1 clove</td>
+        </tr>
+        <tr>
+          <td>salt</td>
+          <td>1 tablespoon</td>
+        </tr>
+        <tr>
+          <td>hot water</td>
+          <td>4 cups</td>
+        </tr>
+        <tr>
+          <td>cream</td>
+          <td>300 grams</td>
+        </tr>
+        <tr>
+          <td>grated parmesan cheese</td>
+          <td>100 grams</td>
+        </tr>
+        <tr>
+          <td>mushroom</td>
+          <td>1 cup</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <a
+      target="_blank"
+      href="https://receitas.globo.com/tipos-de-prato/acompanhamentos/arroz-a-piamontese-4df18907ed33ed51a1000bc8.ghtml"
+    >
+      <img
+        src="https://s2-receitas.glbimg.com/GHIzjo0ytFat-YenAkeu8z7XW0Y=/0x0:1280x800/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2022/T/v/SCRij3TS2bYO5oGKS10A/arroz-a-piamontese-receita.jpg"
+        height="220"
+    /></a>
+
+    <p>
+      <strong class="steps">Step 1:</strong> In a pan, place 1 tablespoon of
+      oil, 1 clove of chopped garlic, 2 cups of rice and sauté for 1 minute.
+    </p>
+    <p>
+      <strong class="steps">Step 2:</strong> Add 1 tablespoon of salt, 4 cups of
+      hot water and mix. Let it cook until there is little water left.
+    </p>
+    <p>
+      <strong class="steps">Step 3:</strong> Add 300 grams of cream, 100 grams
+      of grated parmesan cheese and 1 cup of mushrooms. Mix until all the cheese
+      has melted.
+    </p>
+
+    <em><a href="#contents">BACK TO CONTENTS</a></em>
+
+    <hr />
+
+    <h2 id="brigadeiro">BRIGADEIRO</h2>
+    <table style="float: left; margin-right: 20px; margin-bottom: 5px">
+      <thead>
+        <tr>
+          <th>Ingredients</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>butter</td>
+          <td>1 tablespoon</td>
+        </tr>
+        <tr>
+          <td>condensed milk</td>
+          <td>1 can</td>
+        </tr>
+        <tr>
+          <td>chocolate powder</td>
+          <td>30 grams</td>
+        </tr>
+        <tr>
+          <td>
+            chocolate sprinkles<br />
+            (I like it better with <br />
+            granulated sugar)
+          </td>
+          <td>150 grams</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <a
+      target="_blank"
+      href="https://receitas.globo.com/tipos-de-prato/doces-e-sobremesas/brigadeiro-561b3b6d4d38852e36000041.ghtml"
+      ><img
+        src="https://www.whitakerschocolates.com/cdn/shop/articles/What-is-Brigadeiro_720x720.jpg?v=1715958800"
+        height="160"
+    /></a>
+
+    <p>
+      <strong class="steps">Step 1:</strong> In a pan, mix the condensed milk,
+      cocoa powder and butter. Turn on the heat and stir until it comes away
+      from the bottom of the pan.
+    </p>
+    <p>
+      <strong class="steps">Step 2:</strong> Wait for it to cool, grease your
+      hands with butter and shape them into spheres.
+    </p>
+    <p>
+      <strong class="steps">Step 3:</strong> Roll the brigadeiros in sprinkles
+      (or ganulated sugar), place in molds and serve.
+    </p>
+
+    <em><a href="#contents">BACK TO CONTENTS</a></em>
+
+    <hr />
+
+    <h2 id="pastel">PASTEL</h2>
+    <table style="float: left; margin-right: 20px; margin-bottom: 5px">
+      <tr>
+        <th rowspan="6">Dough</th>
+        <th>Ingredients</th>
+        <th>Quantity</th>
+      </tr>
+      <tr>
+        <td>wheat flour</td>
+        <td>480 grams</td>
+      </tr>
+      <tr>
+        <td>oil</td>
+        <td>2 tablespoons</td>
+      </tr>
+      <tr>
+        <td>warm water</td>
+        <td>1 cup</td>
+      </tr>
+      <tr>
+        <td>salt</td>
+        <td>2 teaspoons</td>
+      </tr>
+      <tr>
+        <td>cachaça</td>
+        <td>2 tablespoons</td>
+      </tr>
+      <th rowspan="4">
+        Filling <br />
+        (You can choose 1,<br />
+        or multiple!)
+      </th>
+      <tr>
+        <td>ground beef sautéed to taste</td>
+        <td>250 grams</td>
+      </tr>
+      <tr>
+        <td>chopped mozzarela and ham</td>
+        <td>250 grams</td>
+      </tr>
+      <tr>
+        <td>nutella and chopped strawberries</td>
+        <td>250 grams</td>
+      </tr>
+    </table>
+
+    <a
+      target="_blank"
+      href="https://receitas.globo.com/receitas-da-tv/mais-voce/massa-para-pastel.ghtml"
+    >
+      <img
+        src="https://texasdebrazil.com/wp-content/uploads/2023/06/pastel-de-queijo.png"
+        height="280"
+    /></a>
+
+    <p>
+      <strong class="steps">Step 1:</strong>
+      In a bowl, place 3 cups of wheat flour, 2 tablespoons of oil, 1 cup of
+      warm water, 2 teaspoons of salt, 2 tablespoons of cachaça and knead well
+      until a homogeneous dough forms.
+    </p>
+
+    <p>
+      <strong class="steps">Step 2:</strong>
+      Transfer the dough to a floured surface and knead for about 5 minutes or
+      until the dough is smooth.
+    </p>
+
+    <p>
+      <strong class="steps">Step 3:</strong>
+      Roll the dough through the roller until it is very thin.
+    </p>
+
+    <p>
+      <strong class="steps">Step 4:</strong>
+      Using a knife, cut rectangles or discs of the size you prefer, place the
+      filling in the middle and fold the dough to form the pastry.
+    </p>
+
+    <p>
+      <strong class="steps">Step 5:</strong>
+      Using a fork, press the edges to seal well.
+    </p>
+
+    <p>
+      <strong class="steps">Step 6:</strong>
+      Fry the pastries in hot oil until golden brown. Remove and drain on
+      absorbent paper.
+    </p>
+
+    <p>
+      <strong class="steps">Step 7:</strong>
+      All done, serve and enjoy!
+    </p>
+
+    <em><a href="#contents">BACK TO CONTENTS</a></em>
+
+    <hr />
+
+    <h2 id="bolinho">BOLINHO DE BACALHAU</h2>
+
+    <table style="float: left; margin-right: 20px; margin-bottom: 5px">
       <tr>
         <th>Ingredients</th>
         <th>Quantity</th>
       </tr>
-    </thead>
-    <tbody>
-    </tbody>
-  </table>
+      <tr>
+        <td>olive oil</td>
+        <td>1 tablespoon</td>
+      </tr>
+      <tr>
+        <td>garlic</td>
+        <td>half a tablespoon</td>
+      </tr>
+      <tr>
+        <td>chopped onion</td>
+        <td>2 tablespoons</td>
+      </tr>
+      <tr>
+        <td>
+          medium boiled potatoes <br />
+          (peeled and mashed)
+        </td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>beaten egg</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>cooked and shredded cod</td>
+        <td>200 grams</td>
+      </tr>
+      <tr>
+        <td>breadcrumbs</td>
+        <td>30 grams</td>
+      </tr>
+      <tr>
+        <td>olive oil</td>
+        <td>1 tablespoon</td>
+      </tr>
+      <tr>
+        <td>chopped parsley</td>
+        <td>to taste</td>
+      </tr>
+      <tr>
+        <td>ground black pepper</td>
+        <td>to taste</td>
+      </tr>
+      <tr>
+        <td>salt</td>
+        <td>to taste</td>
+      </tr>
+    </table>
 
-  <p><strong>Step 1:</strong> Do something.
-  </p>
+    <a
+      target="_blank"
+      href="https://receitas.globo.com/receitas-da-tv/mais-voce/bolinho-de-bacalhau-sem-erro-52bd64c64d38851fb300003f.ghtml"
+    >
+      <img
+        src="https://static.itdg.com.br/images/360-240/a71f4fd47fc37eeb98a662bc69e304be/shutterstock-2005565906.jpg"
+        height="320"
+      />
+    </a>
 
-  <p><em>Source: <a href="?">Some recipes websites</a></em></p>
+    <p>
+      <strong class="steps">Step 1:</strong> In a pan with 1 tablespoon of olive
+      oil, sauté half a tablespoon of garlic and 2 tablespoons of chopped onion
+      until golden.
+    </p>
+    <p>
+      <strong class="steps">Step 2:</strong>
+      Transfer the sautéed mixture to a bowl.
+    </p>
+    <p>
+      <strong class="steps">Step 3:</strong>
+      Add 2 medium cooked and mashed potatoes, 1 beaten egg, 200 grams of cooked
+      and shredded cod, a quarter of a cup of breadcrumbs, 1 tablespoon of olive
+      oil, chopped parsley, ground black pepper, salt to taste.
+    </p>
+    <p>
+      <strong class="steps">Step 4:</strong>
+      Mix well until a homogeneous dough forms. Take small portions of dough,
+      make balls and fry in hot oil until golden brown.
+    </p>
+    <p>
+      <strong class="steps">Step 5:</strong>
+      Remove, drain on absorbent paper and serve!
+    </p>
 
-</body>
+    <em><a href="#contents">BACK TO CONTENTS</a></em>
 
+    <hr />
+
+    <h2 id="coxinha">COXINHA</h2>
+
+    <table style="float: left; margin-right: 20px; margin-bottom: 5px">
+      <tr>
+        <th rowspan="8" align="center" valign="center">Filling</th>
+        <th align="center" valign="top">Ingredients</th>
+        <th align="center" valign="top">Quantity</th>
+      </tr>
+      <tr>
+        <td>chicken broth tablets</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>chicken breast</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>onion</td>
+        <td>to taste</td>
+      </tr>
+      <tr>
+        <td>garlic</td>
+        <td>to taste</td>
+      </tr>
+      <tr>
+        <td>parsley</td>
+        <td>to taste</td>
+      </tr>
+      <tr>
+        <td>chives</td>
+        <td>to taste</td>
+      </tr>
+      <tr>
+        <td>rosemary</td>
+        <td>to taste</td>
+      </tr>
+      <th rowspan="4">Dough</th>
+      <tr>
+        <td>water</td>
+        <td>2 cups</td>
+      </tr>
+      <tr>
+        <td>margarine</td>
+        <td>1 tablespoon</td>
+      </tr>
+      <tr>
+        <td>wheat flour</td>
+        <td>2 cups</td>
+      </tr>
+      <th rowspan="3">Assembly</th>
+      <tr>
+        <td>beaten eggs</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>breadcrumbs</td>
+        <td>1 cup</td>
+      </tr>
+    </table>
+
+    <a
+      target="_blank"
+      href="https://receitas.globo.com/tipos-de-prato/paes-e-salgados/coxinha-de-frango-rapida-e-facil-516e06b04d38851e2100005c.ghtml"
+    >
+      <img
+        src="https://swiftbr.vteximg.com.br/arquivos/ids/199645-768-768/617666-COXINHA-DE-FRANGO-COM-MANDIOCA-PRE-FRITA-SWIFT-300G.jpg?v=638557794060230000"
+        height="320"
+    /></a>
+
+    <h3>Filling</h3>
+    <p>
+      <strong class="steps">Step 1:</strong> In a saucepan, add enough water to
+      cook the chicken. Add 2 chicken broth cubes and 1 chicken breast.
+    </p>
+    <p>
+      <strong class="steps">Step 2:</strong>
+      Cook until the chicken breast is tender.
+    </p>
+    <p>
+      <strong class="steps">Step 3:</strong> Use two forks to shred the chicken
+      breast.
+    </p>
+    <p>
+      <strong class="steps">Step 4:</strong>
+      Place the shredded chicken breast in the pan and sauté with onion and
+      garlic to taste.
+    </p>
+    <p>
+      <strong class="steps">Step 5:</strong> Season the shredded chicken with
+      parsley, chives and rosemary. Set aside.
+    </p>
+
+    <h3>Dough</h3>
+    <p>
+      <strong class="steps">Step 1:</strong> In a saucepan, place 2 cups of
+      water from the cooking/preparation of the chicken and 1 tablespoon of
+      margarine. Let it boil
+    </p>
+    <p>
+      <strong class="steps">Step 2:</strong>
+      Add 2 cups of wheat flour. Mix quickly to avoid lumps.
+    </p>
+    <p><strong class="steps">Step 3:</strong> Let it cool and set aside.</p>
+
+    <h3>Assembly</h3>
+
+    <p><strong class="steps">Step 1:</strong> Take the dough and make balls.</p>
+    <p>
+      <strong class="steps">Step 2:</strong>
+      Open the dough in your hand and add the filling.
+    </p>
+    <p>
+      <strong class="steps">Step 3:</strong> Close the dough and shape it into a
+      coxinha.
+    </p>
+    <p>
+      <strong class="steps">Step 4:</strong>
+      Coat the coxinha in the beaten egg and breadcrumbs.
+    </p>
+    <p>
+      <strong class="steps">Step 5:</strong> Fry in hot oil. Using a slotted
+      spoon, remove the coxinha and drain until dry.
+    </p>
+
+    <em><a href="#contents">BACK TO CONTENTS</a></em>
+  </body>
 </html>
